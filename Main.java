@@ -1,7 +1,6 @@
 import model.*;
 import java.util.*;
 public class Main {
-    // 🔸 Function to track vehicle location
     private static void trackVehicle(Vehicle vehicle) {
         System.out.println("\n--- Vehicle Tracking ---");
         System.out.println("Vehicle: " + vehicle.getBrand() + " (" + vehicle.getVehicleNumber() + ")");
@@ -9,10 +8,9 @@ public class Main {
         System.out.println("Current Location: " + location);
     }
 
-    // 🔸 Function to update vehicle location
     private static void updateLocation(Vehicle vehicle, Scanner sc) {
         System.out.print("Enter new location for " + vehicle.getBrand() + ": ");
-        sc.nextLine(); // consume leftover newline
+        sc.nextLine(); 
         String newLocation = sc.nextLine();
         vehicle.setLocation(newLocation);
         System.out.println("✅ Location updated successfully!");
@@ -119,3 +117,4 @@ public class Main {
         }
     }
 }
+
