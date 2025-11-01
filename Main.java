@@ -79,7 +79,7 @@ public class Main {
                                 break;
                             }
                         }
-                        if (!found) System.out.println("❌ Vehicle not found!");
+                        if (!found) System.out.println("Vehicle not found!");
                         break;
 
                     case 4:
@@ -94,7 +94,7 @@ public class Main {
                                 break;
                             }
                         }
-                        if (!tracked) System.out.println("❌ Vehicle not found!");
+                        if (!tracked) System.out.println("Vehicle not found!");
                         break;
 
                     case 5:
@@ -102,19 +102,20 @@ public class Main {
                         return;
 
                     default:
-                        System.out.println("❌ Invalid option!");
+                        System.out.println("Invalid option!");
                 }
             }
 
         } catch (InputMismatchException e) {
-            System.out.println("❌ Invalid input! Please enter numbers where required.");
+            System.out.println("Invalid input! Please enter numbers where required.");
         } catch (IllegalArgumentException e) {
-            System.out.println("❌ " + e.getMessage());
+            System.out.println(e.getMessage());
         } catch (Exception e) {
-            System.out.println("⚠️ Unexpected error: " + e);
+            System.out.println("Unexpected error: " + e);
         } finally {
             sc.close();
         }
     }
 }
+
 
